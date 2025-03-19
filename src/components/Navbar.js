@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 
 import {
- 
+
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -38,8 +38,11 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+        <Navbar.Brand className="d-flex">
+          <Link to='/'>
+            <img src={logo} className="img-fluid logo" alt="brand" />
+          </Link>
+
           {/* mohan */}
         </Navbar.Brand>
         <Navbar.Toggle
